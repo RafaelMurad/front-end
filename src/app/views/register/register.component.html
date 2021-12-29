@@ -4,10 +4,10 @@
             <h1>Register</h1>
         </div>
         <div class="login-body">
-            <form>
+            <form [formGroup]="form" (ngSubmit)="submit()">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="email" formControlName="name" placeholder="Name">
+                    <input type="text" class="form-control" id="name" formControlName="name" placeholder="Name">
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
